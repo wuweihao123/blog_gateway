@@ -1,0 +1,21 @@
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: gateway-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        namespace: b4e1ad25-6f6b-4c2f-b49b-c1c3d220ff6f
+      config:
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name}
+        file-extension: yaml
+        namespace: dev
+        group: DEFAULT_GROUP
+  profiles:
+    active: dev
+
