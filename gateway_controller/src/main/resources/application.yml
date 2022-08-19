@@ -9,7 +9,7 @@ spring:
         server-addr: 127.0.0.1:8848
         username: nacos
         password: nacos
-        namespace: b4e1ad25-6f6b-4c2f-b49b-c1c3d220ff6f
+        namespace: cdc60379-e3a5-4bfa-ba8c-658910939f98
       config:
         server-addr: 127.0.0.1:8848
         prefix: ${spring.application.name}
